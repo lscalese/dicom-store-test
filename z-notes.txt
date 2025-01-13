@@ -3,6 +3,11 @@
 docker run openjdk:23-jdk
 
 
+** Telechargement dcm4che
+
+https://sourceforge.net/projects/dcm4che/files/dcm4che3/5.33.1/dcm4che-5.33.1-bin.zip/download
+
+
 ** associations.txt **
 
 #  Association Negotiation
