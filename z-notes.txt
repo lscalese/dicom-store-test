@@ -1,0 +1,31 @@
+./storescp --accept IRIS --accept-unknown --bind PACS:4200 --directory C:\git-data\dicom-store-test\dicom\out\
+
+docker run openjdk:23-jdk
+
+
+** associations.txt **
+
+#  Association Negotiation
+1.2.840.10008.1.1
+
+# X-Ray Angiographic Image IOD / Implicit VR Endian: Default Transfer Syntax for DICOM
+1.2.840.10008.5.1.4.1.1.12.1\1.2.840.10008.1.2   
+
+# X-Ray Angiographic Image IOD / JPEG Baseline (Process 1): Default Transfer Syntax for Lossy JPEG 8 Bit Image Compression
+1.2.840.10008.5.1.4.1.1.12.1\1.2.840.10008.1.2.4.50
+
+# 	MR Image IOD
+1.2.840.10008.5.1.4.1.1.4\1.2.840.10008.1.2
+1.2.840.10008.5.1.4.1.1.4\1.2.840.10008.1.2.4.50
+
+# Ultrasound Multi-frame Image Storage
+1.2.840.10008.5.1.4.1.1.3.1\1.2.840.10008.1.2
+1.2.840.10008.5.1.4.1.1.3.1\1.2.840.10008.1.2.4.50
+
+# X-Ray Radiofluoroscopic Image Storage
+1.2.840.10008.5.1.4.1.1.12.2\1.2.840.10008.1.2
+1.2.840.10008.5.1.4.1.1.12.2\1.2.840.10008.1.2.4.50
+
+# Enhanced MR Image Storage
+1.2.840.10008.5.1.4.1.1.4.1\1.2.840.10008.1.2
+1.2.840.10008.5.1.4.1.1.4.1\1.2.840.10008.1.2.4.50

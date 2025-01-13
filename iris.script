@@ -13,5 +13,12 @@
     zpm "install passwordless"
     ; importing the source code of the repository as ZPM module
     zn "USER"
+    Do ##class(%Library.EnsembleMgr).EnableNamespace($Namespace, 1)
     zpm "load /home/irisowner/dev -v":1:1
+
+    Do ##class(EnsLib.DICOM.Util.AssociationContext).CreateAssociation("IRIS","PACS")
+    Do ##class(EnsLib.DICOM.Util.AssociationContext).CreateAssociation("PACS","IRIS")
+    Do ##class(EnsLib.DICOM.Util.AssociationContext).ImportAssociation("/home/irisowner/dev/dicom/associations.txt","PACS","IRIS",0)
+    Do ##class(EnsLib.DICOM.Util.AssociationContext).ImportAssociation("/home/irisowner/dev/dicom/associations.txt","IRIS","PACS",0)
+
     halt

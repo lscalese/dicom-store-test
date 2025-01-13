@@ -1,0 +1,4 @@
+ARG IMAGE=openjdk:23-jdk
+
+FROM $IMAGE
+
